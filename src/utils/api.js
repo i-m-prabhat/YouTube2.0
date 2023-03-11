@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const BASE_URL = 'https://youtube138.p.rapidapi.com/auto-complete/';
+
 const options = {
   method: 'GET',
   url: 'https://youtube138.p.rapidapi.com/auto-complete/',
@@ -9,9 +11,3 @@ const options = {
     'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
   }
 };
-
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
